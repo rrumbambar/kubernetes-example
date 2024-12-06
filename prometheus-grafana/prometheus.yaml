@@ -21,9 +21,7 @@ spec:
         - containerPort: 9090
         args:
           - '--config.file=/etc/prometheus/prometheus.yml'
-        # command: [ "sh", "-c"]
-        # loop forever, outputting "yo" every 5 seconds
-        # args: ["while true; do echo 'yo' && sleep 5; done;"]
+
         volumeMounts:
         - name: prometheus-config
           mountPath: /etc/prometheus
